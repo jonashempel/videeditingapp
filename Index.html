@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Jonas Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#pricing">Pricing</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="landing" class="landing">
+        <div class="landing-content">
+            <h1>Jonas Portfolio</h1>
+            <p>Video Editing & Design</p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section section-alt">
+        <div class="section-container">
+            <h2>About me</h2>
+            <p>Howdy, Jonas here. I've been passionate about video editing and design for about 3 years. If I had to describe myself in three words, they would be: friendly, empathetic and communicative. I'm sure we can create something greater together. I look forward to hearing from you.</p>
+        </div>
+    </section>
+
+    <!-- My Work -->
+    <section id="work" class="section">
+        <div class="section-container">
+            <h2>My Work</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/uPVGFlY2wm4" title="Example of my work" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section-alt">
+        <div class="section-container">
+            <h2>Pricing</h2>
+            <p>Pricing is determined based on the length, complexity, and overall amount of work required. If you're interested in a project, feel free to reach out, and I'll be happy to provide you with a personalized quote tailored to your specific needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2>Contact</h2>
+            <p>Feel free to contact me anytime if you have any questions, need assistance, or would like to discuss a project. 
+                I'm always available and happy to help!</p>
+            <ul class="con-links">
+                <li><a href="mailto:contact@jonashempelvideoeditor.de" target="_blank"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.threads.net/@jonashempel.video" target="_blank"><i class="fab fa-instagram"></i> Threads</a></li> 
+                <li><a href="https://www.instagram.com/jonashempel.video/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/@jonashempelvideos" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.textContent = this.textContent === '☰' ? '✕' : '☰';
+        });
+
+        // Close menu when a menu item is clicked
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('active');
+                document.querySelector('.menu-toggle').textContent = '☰';
+            });
+        });
+    </script>
+</body>
+</html>
