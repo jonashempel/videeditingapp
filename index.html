@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Portfolio</title>
+    <title>Jonas Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,64 +11,162 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
+            <div class="logo">J</div>
             <button class="menu-toggle" aria-label="Open menu">☰</button>
             <ul class="nav-links">
-                <li><a href="#about">About me</a></li>
-                <li><a href="#work">My Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#pricing">Pricing</a></li> 
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="cta-button">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Landing Page -->
-    <section id="landing" class="landing">
-        <div class="landing-content">
-            <h1>Jonas Portfolio</h1>
-            <p>Video Editing & Design</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Creating <span class="gradient-text">Impactful</span> Videos and Designs</h1>
+                <p>Professional video editing and design services to elevate your brand's visual identity.</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="primary-button">View My Work</a>
+                    <a href="#contact" class="secondary-button">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-film gradient-icon"></i>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Me -->
-    <section id="about" class="section section-alt">
+    <section id="about" class="section">
         <div class="section-container">
-            <h2>About me</h2>
-            <p>Howdy, Jonas here. I've been passionate about video editing and design for about 3 years. If I had to describe myself in three words, they would be: friendly, empathetic and communicative. I'm sure we can create something greater together. I look forward to hearing from you.<br>(The showreel video does not work rn. You can just click on the Youtube link at the bottem of the page)</p>
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>The Person Behind the Work</h2>
+            </div>
+            <div class="about-content">
+                <p>Howdy, Jonas here. I've been passionate about video editing and design for about 3 years. If I had to describe myself in three words, they would be: <span class="highlight">friendly</span>, <span class="highlight">empathetic</span> and <span class="highlight">communicative</span>. I'm sure we can create something greater together. I look forward to hearing from you.</p>
+                <p class="note">(The showreel video does not work currently. You can click on the YouTube link at the bottom of the page to see my work.)</p>
+            </div>
         </div>
     </section>
 
     <!-- My Work -->
-    <section id="work" class="section">
+    <section id="work" class="section section-alt">
         <div class="section-container">
-            <h2>My Work</h2>
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Selected Works</h2>
+            </div>
             <div class="video-container">
-                <iframe src="https://youtu.be/vqiUIl7GMCk" title="Example of my work" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/vqiUIl7GMCk" title="Example of my work" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-thumbnail">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                </div>
+                <div class="work-item">
+                    <div class="work-thumbnail">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Motion Graphics</h3>
+                </div>
+                <div class="work-item">
+                    <div class="work-thumbnail">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Visual Design</h3>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="section section-alt">
+    <section id="pricing" class="section">
         <div class="section-container">
-            <h2>Pricing</h2>
-            <p>Pricing is determined based on the length, complexity, and overall amount of work required. If you're interested in a project, feel free to reach out, and I'll be happy to provide you with a personalized quote tailored to your specific needs.</p>
+            <div class="section-header">
+                <span class="section-tag">Services</span>
+                <h2>Pricing Options</h2>
+            </div>
+            <div class="pricing-content">
+                <p>Pricing is determined based on the length, complexity, and overall amount of work required. If you're interested in a project, feel free to reach out, and I'll be happy to provide you with a personalized quote tailored to your specific needs.</p>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Basic</h3>
+                            <p class="price">Custom Quote</p>
+                        </div>
+                        <ul class="features">
+                            <li>Short Form Content</li>
+                            <li>Basic Editing</li>
+                            <li>2 Revisions</li>
+                        </ul>
+                        <a href="#contact" class="card-button">Contact Me</a>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="card-badge">Popular</div>
+                        <div class="card-header">
+                            <h3>Standard</h3>
+                            <p class="price">Custom Quote</p>
+                        </div>
+                        <ul class="features">
+                            <li>Long & Short Form</li>
+                            <li>Advanced Editing</li>
+                            <li>4 Revisions</li>
+                            <li>Motion Graphics</li>
+                        </ul>
+                        <a href="#contact" class="card-button">Contact Me</a>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Premium</h3>
+                            <p class="price">Custom Quote</p>
+                        </div>
+                        <ul class="features">
+                            <li>All Content Types</li>
+                            <li>Premium Editing</li>
+                            <li>Unlimited Revisions</li>
+                            <li>Advanced Effects</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="card-button">Contact Me</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
         <div class="section-container">
-            <h2>Contact</h2>
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Let's Create Together</h2>
+            </div>
             <p>Feel free to contact me anytime if you have any questions, need assistance, or would like to discuss a project. 
                 I'm always available and happy to help!</p>
-            <ul class="con-links">
-                <li><a href="mailto:error" target="_blank"><i class="fas fa-envelope"></i> Email</a></li>
-                <li><a href="https://www.threads.net/@jonashempel.video" target="_blank"><i class="fab fa-instagram"></i> Threads</a></li> 
-                <li><a href="https://www.instagram.com/jonashempel.video/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://www.youtube.com/@hempeljonas" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
-            </ul>
+            <div class="contact-links">
+                <a href="mailto:error" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.threads.net/@jonashempel.video" class="contact-link" target="_blank"><i class="fab fa-instagram"></i> Threads</a> 
+                <a href="https://www.instagram.com/jonashempel.video/" class="contact-link" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.youtube.com/@hempeljonas" class="contact-link" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Jonas Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script>
         document.querySelector('.menu-toggle').addEventListener('click', function() {
