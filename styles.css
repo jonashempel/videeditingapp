@@ -509,6 +509,76 @@ ul {
   box-shadow: 0 6px 15px rgba(93, 142, 255, 0.25);
 }
 
+/* SHOP SECTION */
+.shop-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.shop-description {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.shop-showcase {
+  margin-bottom: 3rem;
+}
+
+.shop-item {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  padding: 3rem;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.shop-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  border-color: var(--accent-color);
+}
+
+.shop-icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--accent-light);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+}
+
+.shop-item h3 {
+  margin-bottom: 1rem;
+}
+
+.shop-item p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.shop-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  color: var(--primary-bg);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(93, 142, 255, 0.2);
+  transition: var(--transition);
+}
+
+.shop-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(93, 142, 255, 0.25);
+  color: var(--primary-bg);
+}
+
 /* CONTACT SECTION */
 .contact-links {
   display: flex;
@@ -596,6 +666,10 @@ ul {
   .pricing-card {
     padding: 2.5rem;
   }
+  
+  .shop-item {
+    padding: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -648,6 +722,10 @@ ul {
     padding: 2rem;
   }
   
+  .shop-item {
+    padding: 2rem;
+  }
+  
   .contact-link {
     width: 100%;
     justify-content: center;
@@ -679,4 +757,6 @@ ul {
   .pricing-card {
     padding: 1.5rem;
   }
-}
+  
+  .shop-item {
+    padding: 1.5
