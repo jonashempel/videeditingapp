@@ -1,11 +1,11 @@
 :root {
-  --primary-bg: #121826;
-  --secondary-bg: #1a2236;
+  --primary-bg: #4A5759;
+  --secondary-bg: #4A5759;
   --card-bg: #232b3e;
   --nav-bg: rgba(18, 24, 38, 0.95);
   --footer-bg: #0b101b;
-  --accent-color: #5d8eff;
-  --accent-hover: #4a7df0;
+  --accent-color: #8EE3EF;
+  --accent-hover: #9AAEB1;
   --accent-light: rgba(93, 142, 255, 0.15);
   --gradient-start: #5d8eff;
   --gradient-end: #6e9dff;
