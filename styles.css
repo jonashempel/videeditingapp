@@ -760,3 +760,13 @@ ul {
   
   .shop-item {
     padding: 1.5
+
+.shop-item {
+    padding: 1.5rem;
+  }
+  
+  .shop-button {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+  }
+}
